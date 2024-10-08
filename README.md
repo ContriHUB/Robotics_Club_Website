@@ -10,7 +10,7 @@ If already installed python follow next steps:
     then `Set-ExecutionPolicy RemoteSigned` to allow running scripts<br />
     to roll back enter `Set-ExecutionPolicy Restricted`.
 3. then install Django inside this environment with this command `pip install Django`
-4. then clone the git repo `git clone https://github.com/Avtech04/Robotics_Club_Website.git`
+4. then clone the git repo `https://github.com/ContriHUB/Robotics_Club_Website.git`
 5. `cd Robotics_Club_Website`
 6. run `pip install -r requirements.txt`
 7. create database schema by running `python manage.py makemigrations` and then `python manage.py migrate`
