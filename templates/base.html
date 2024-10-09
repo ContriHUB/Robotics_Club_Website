@@ -218,59 +218,63 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        <div class="row" id="rows">
           <div class="col-lg-3 col-md-6 footer-links">
-            <ul>
+            <ul class="mid768">
               <li>
                 <img class="mb-2 ml-3" src="{% static 'img\New MNNIT Logo.png' %}" alt="" width="89.57" height="120.85">
               </li>
               <li> <small class="text-muted">© Robotics Club MNNIT</small></li>
             </ul>
           </div>
+          
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4 class="first">Useful Links</h4>
             <ul>
-              <li><a class="" href="{% url 'home:index' %}"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                  Home</a></li>
-              <li><a class="" href="{% url 'workshop:workshop_page' %}" target=""><i class="fa fa-angle-right"
-                    aria-hidden="true"></i>
-                  Workshops</a></li>
-              <li><a class="" href="{% url 'home:collaborate' %}" target=""><i class="fa fa-angle-right"
-                    aria-hidden="true"></i>
-                  Collaborate</a></li>
-              <li><a class="" href="http://aeroclub.mnnit.ac.in" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                  Aeroclub</a></li>
-                 <li><a class="" href="http://astrowing.mnnit.ac.in" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                  AstroClub</a></li>
-            </ul>
+                <li><h4 class="first">Useful Links</h4></li>
+                <li><a class="" href="{% url 'home:index' %}"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    Home</a></li>
+                <li><a class="" href="{% url 'workshop:workshop_page' %}" target=""><i class="fa fa-angle-right"
+                      aria-hidden="true"></i>
+                    Workshops</a></li>
+                <li><a class="" href="{% url 'home:collaborate' %}" target=""><i class="fa fa-angle-right"
+                      aria-hidden="true"></i>
+                    Collaborate</a></li>
+                <li><a class="" href="http://aeroclub.mnnit.ac.in" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    Aeroclub</a></li>
+                  <li><a class="" href="http://astrowing.mnnit.ac.in" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    AstroClub</a></li>
+              </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <ul>
-              <li>
-                <h4 class="second">Robotics Club</h4>
-              </li>
-              <li>Near Boys' SAC</li>
-              <li>MNNIT Allahabad</li>
-              <li>Prayagraj</li>
-              <li>Uttar Pradesh, India</li>
-              <!-- <li><strong>Email :</strong>roboticsclub@mnnit.ac.in </li> -->
-            </ul>
+              <ul>
+                <li>
+                  <h4 class="second">Robotics Club</h4>
+                </li>
+                <li>Near Boys' SAC</li>
+                <li>MNNIT Allahabad</li>
+                <li>Prayagraj</li>
+                <li>Uttar Pradesh, India</li>
+                <!-- <li><strong>Email :</strong>roboticsclub@mnnit.ac.in </li> -->
+              </ul>
           </div>
+         
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4 class="third">Our Social Networks</h4>
-            <!-- <p class="text-white">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
-            <div class="social-links mt-3">
-              <a href="https://www.facebook.com/avishkar.robotics" class="facebook" target="_blank"><i
-                  class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/roboticsclubmnnit/" class="instagram" target="_blank"><i
-                  class="fa fa-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UCsHbcNUhK5dMWgtsxNNfm7A" class="youtube" target="_blank"><i
-                  class="fa fa-youtube"></i></a>
-              <a href="https://www.linkedin.com/in/robotics-club-mnnit-20634417a/" class="linkedin" target="_blank"><i
-                  class="fa fa-linkedin"></i></a>
-              <a href="mailto:roboticsclub@mnnit.ac.in" class="linkedin" target="_blank"><i
-                  class="fa fa-envelope"></i></a>
+            <div class="mid768" >
+                  <h4 class="third">Our Social Networks</h4>
+                  <!-- <p class="text-white">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+                  <div class="social-links mt-3">
+                    <a href="https://www.facebook.com/avishkar.robotics" class="facebook" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/roboticsclubmnnit/" class="instagram" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCsHbcNUhK5dMWgtsxNNfm7A" class="youtube" target="_blank"><i
+                        class="fa fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/robotics-club-mnnit-20634417a/" class="linkedin" target="_blank"><i
+                        class="fa fa-linkedin"></i></a>
+                    <a href="mailto:roboticsclub@mnnit.ac.in" class="linkedin" target="_blank"><i
+                        class="fa fa-envelope"></i></a>
+                  </div>
             </div>
           </div>
         </div>

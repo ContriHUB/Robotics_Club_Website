@@ -385,6 +385,42 @@ color: #e76668;
   color: #fff;
   text-decoration: none;
 }
+@media (max-width: 768px){
+  .mid768{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #rows {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 10px;
+  }
+  .col-lg-3 {
+    flex: 0 0 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .footer-links:nth-child(1),
+  .footer-links:nth-child(4) {
+    flex: 0 0 100%; 
+  }
+
+  .footer-links:nth-child(2),
+  .footer-links:nth-child(3) {
+    flex: 0 0 48%;
+    margin: 0 1%; 
+  }
+}
 
 /*--------------------------------------------------------------
 # Pagination
