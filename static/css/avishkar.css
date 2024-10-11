@@ -142,7 +142,7 @@
   content: "";
   width: 14px;
   height: 2px;
-  background: white;
+  background: black;
   position: absolute;
   top: calc(50% - 1px);
   right: 1rem;
@@ -155,12 +155,17 @@
   content: "";
   width: 2px;
   height: 14px;
-  background: white;
+  background: black;
   position: absolute;
   top: calc(50% - 7px);
   right: calc(1rem + 6px);
   display: block;
   transition: all 0.3s;
+}
+
+.dark .collapsible-link::before,
+.dark .collapsible-link::after {
+  background-color: white;
 }
 
 .collapsible-link[aria-expanded="true"]::after {
@@ -172,9 +177,14 @@
 }
 
 .accordion .card-header a {
-  color: white;
+  color: black;
   transition: 0.3s;
 }
+
+.dark .accordion .card-header a {
+  color: white;
+}
+
 .accordion .card-body a {
   color: #e05578;
   transition: 0.3s;

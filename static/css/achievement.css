@@ -36,8 +36,16 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 }
 
+.dark .services .icon-box {
+  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.25);
+}
+
 .services .icon-box:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark .services .icon-box:hover {
+  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.5);
 }
 
 .services .icon-box:hover h4 {
@@ -66,6 +74,10 @@ section {
   margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+}
+
+.dark .services .icon-box p {
+  color: white;
 }
 
 .services .icon-box p > a {
