@@ -1,30 +1,34 @@
-#avishkar .d-flex h2{
-    color: #333;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
+#avishkar .d-flex h2 {
+  color: #333;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   line-height: 180%;
   /* border-bottom:#e03a3c 5px solid; */
 }
-.title{
-  border-bottom:#e03a3c 5px solid;
+
+.dark #avishkar .d-flex h2 {
+  color: white;
 }
-.full-form{
-  border-bottom:#e03a3c 5px solid;
+
+.title {
+  border-bottom: #e03a3c 5px solid;
+}
+.full-form {
+  border-bottom: #e03a3c 5px solid;
   margin-right: auto;
 }
-.logo{
+.logo {
   max-height: 73px;
   margin-right: auto;
 }
-@media(max-width: 768px)
-{
-  .logo{
+@media (max-width: 768px) {
+  .logo {
     /* display: none; */
     max-height: 64px;
     margin-right: 0px;
   }
-  .title{
+  .title {
     margin-left: 7px;
     border-bottom: transparent;
   }
@@ -54,11 +58,19 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 }
 
-.services .icon-box:hover{
+.dark .services .icon-box {
+  background-color: #1b1b1b;
+}
+
+#services .container h4 {
+  color: black;
+}
+
+.services .icon-box:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
-.services .icon-box:hover h3{
+.services .icon-box:hover h3 {
   /* background: #2b2b2b; */
   color: #db1515;
 }
@@ -70,6 +82,12 @@ section {
   font-size: 18px;
   color: black;
   transition: 0.3s;
+}
+
+.dark .services .icon-box,
+.dark #services .container h4,
+.dark .services .icon-box h3 {
+  color: white;
 }
 
 .services .icon-box p {
@@ -84,7 +102,7 @@ section {
 
 /* Horizontal line */
 .collapsible-link::before {
-  content: '';
+  content: "";
   width: 14px;
   height: 2px;
   background: #333;
@@ -97,7 +115,7 @@ section {
 
 /* Vertical line */
 .collapsible-link::after {
-  content: '';
+  content: "";
   width: 2px;
   height: 14px;
   background: #333;
@@ -108,11 +126,19 @@ section {
   transition: all 0.3s;
 }
 
-.collapsible-link[aria-expanded='true']::after {
+.dark .collapsible-link::before {
+  background-color: whitesmoke;
+}
+
+.dark .collapsible-link::after {
+  background-color: whitesmoke;
+}
+
+.collapsible-link[aria-expanded="true"]::after {
   transform: rotate(90deg) translateX(-1px);
 }
 
-.collapsible-link[aria-expanded='true']::before {
+.collapsible-link[aria-expanded="true"]::before {
   transform: rotate(180deg);
 }
 
@@ -120,33 +146,51 @@ section {
   color: #37423b;
   transition: 0.3s;
 }
+
+.dark .accordion .card-header a {
+  color: whitesmoke;
+}
+
 .accordion .card-body a {
   color: #e05578;
   transition: 0.3s;
 }
 
-.accordion .card a:hover{
+.accordion .card a:hover {
   color: #db1515;
   text-decoration: none;
 }
 
+.accordion .card #headingOne,
+.accordion .card #headingTwo {
+  background-color: white;
+}
+
+.dark .accordion .card #headingOne,
+.dark .accordion .card #headingTwo {
+  background-color: #1b1b1b;
+}
+
+.dark #collapseOne,
+.dark #collapseTwo {
+  background-color: #1b1b1b;
+}
 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.content{
+.content {
   font-size: 1.1rem;
 }
-.team .speaker{
+.team .speaker {
   transition: box-shadow 1s;
   padding-top: 10px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
-.team .speaker:hover{
+.team .speaker:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
   /* transition: all 0.3s ease-in-out; */
 }
-
 
 .team .member {
   margin-bottom: 20px;
@@ -207,7 +251,7 @@ section {
   color: #111111;
 }
 
-.team .speaker:hover h4{
+.team .speaker:hover h4 {
   color: red;
 }
 
