@@ -12,7 +12,11 @@ from django.contrib import messages
 
 def list(request):
     context={}
-    project_all=Project.objects.get_queryset().order_by('id')
+    query = request.GET.get('q')
+    if query:
+        project_all = Project.objects.filter(title__icontains=query).order_by('id')
+    else:
+        project_all = Project.objects.get_queryset().order_by('id')
     page=request.GET.get('page')
     paginator=Paginator(project_all,9)
     projects=paginator.get_page(page)
